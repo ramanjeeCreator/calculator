@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Handjet&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 67.5%;
+    background-color: whitesmoke;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+}
+
+.container {
+    width: 30rem;
+    height: 100vh;
+    border: 0.5rem solid brown;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.box {
+    background: white;
+    border: 1rem solid skyblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 1rem;
+}
+
+#answer-area {
+    border: 0.5rem solid brown;
+    width: 100%;
+    height: 6rem;
+    /* margin-top: 2rem; */
+}
+
+#answer-input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid #3fa2cb;
+    font-size: 3rem;
+    text-align: right;
+    font-family: 'Handjet', cursive;
+    font-family: "DigitalFont", Arial, sans-serif;
+    ;
+}
+
+#answer-input::selection {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #206886;
+    color: white;
+}
+
+#answer-input:focus {
+    outline: none;
+}
+
+#button-area {
+    /* border: 0.5rem solid brown; */
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    border: 0.5rem solid brown;
+    padding: 0.4rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* font-family: 'Handjet', cursive; */
+}
+
+#delete-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#delete-area .button {
+    padding: 0;
+    font-size: 2rem;
+}
+
+#information-area {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#info-button {
+    font-size: xx-large;
+}
+
+#info-button~p {
+    display: none;
+    font-size: xx-large;
+    color: brown;
+}
+
+#info-button:hover~p {
+    display: block;
+    transition: all 2s linear;
+}
